@@ -7,14 +7,14 @@ BROKER = "100.101.98.30"
 PORT = 1883
 TOPIC = "home/office/pir1"
 CLIENT_ID = "pir-sim-01"
-PUBLISH_INTERVAL = 2.0  # segundos entre mensajes (ajusta a tu necesidad)
+PUBLISH_INTERVAL = 2.0  # segundos entre mensajes 
 
 client = mqtt.Client(CLIENT_ID)
 client.connect(BROKER, PORT)
 
 def simulate_pir():
     # Simula ráfagas: mayor probabilidad de no detección, pequeñas ráfagas de detección
-    if random.random() < 0.08:  # 8% prob de iniciar una ráfaga de movimiento
+    if random.random() < 0.5:  # 50% de probabilidad de iniciar una ráfaga de movimiento
         # ráfaga de 1-6 mensajes con motion=true
         for _ in range(random.randint(1,6)):
             yield True
