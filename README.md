@@ -1,7 +1,9 @@
 # Automatización de luces con sensores de presencia
 
 **Nombre:** Jesus Eduardo Galeana Leja
+
 **No. Control:** 22211565
+
 **Fecha:** 19 de octubre de 2025
 
 ## Propósito del sistema
