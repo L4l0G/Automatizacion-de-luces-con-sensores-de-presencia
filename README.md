@@ -79,6 +79,7 @@ Este es un ejemplo de consulta de datos dentro de Grafana.
 SELECT "presencia" FROM "sensor_presencia"
 ```
 **Opcional: Tailscale**
+
 Tailscale es un VPN que permite crear un red segura y cifrada entre distintos dispositivos, sin requerir de la apertura de puertos ni configurar firewalls. En caso de querer evitar realizar estos procesos, Tailscale permite el acceso a los puertos 1883 (Mosquitto), 8086 (InfluxDB) y 3000 (Grafana) entre todos aquellos dispositivos que se encuentren dentro de la red privada de Tailscale.
 
 
